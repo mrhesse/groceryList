@@ -23,6 +23,23 @@ h1 {
   font-weight: normal;
 }
 
+input {
+  font-size: 18px;
+  background: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -mox-box-sizing: border-box;
+  color: #566782;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus {
+  background: #ffffff;
+  border: 3px solid #566782;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -39,23 +56,7 @@ li:nth-child(2n) {
   background: #f7f7f7;
 }
 
-input {
-  font-size: 18px;
-  background: #f7f7f7;
-  width: 100%;
-  padding: 13px 13px 13px 20px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -mox-box-sizing: border-box;
-  color: #566782;
-}
-
-input:focus {
-  background: #ffffff;
-  border: 3px solid #566782;
-}
-
-.fa-trash {
+span {
   background: #ce2029;
   color: #ffffff;
   margin-right: 20px;
@@ -63,10 +64,13 @@ input:focus {
   height: 40px;
   text-align: center;
   display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
 }
 
-li:hover i {
+li:hover span {
   width: 40px;
+  opacity: 1.0;
 }
 
 .done {

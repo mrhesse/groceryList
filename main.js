@@ -2,7 +2,7 @@ $("ul").on("click", "li", function(){
   $(this).toggleClass("done");
 });
 
-$("ul").on("click", "i", function(e){
+$("ul").on("click", "span", function(e){
   $(this).parent().fadeOut(500,function(){
     $(this).remove();
   })
@@ -10,8 +10,8 @@ $("ul").on("click", "i", function(e){
 });
 
 $("input[type='text']").keypress(function(e){
-  if(e.which === 13){
-    $("ul").append("<li><i class='fa fa-trash'></i> " + $(this).val() + "</li>");
+  if(e.which === 13 && $(this).val() !== ""){
+    $("ul").append("<li><span><i class='fa fa-trash'></i></span>" + $(this).val() + "</li>");
     $(this).val("");
   }
 });
