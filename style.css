@@ -2,3 +2,12 @@
   width: 360px;
   margin: 0 auto;
 }
+
+.done {
+  color: #9a9a9a;
+  text-decoration: line-through;
+}
+
+ul {
+  list-style: none;
+}
