@@ -1,13 +1,75 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url(img/restaurant_icons.png);
+}
+
 .container {
   width: 360px;
-  margin: 0 auto;
+  margin: 50px auto;
+  border: 2px solid #566782;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+h1 {
+  background: #566782;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: #ffffff;
+  line-height: 40px;
+  color: #101010;
+}
+
+li:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+input {
+  font-size: 18px;
+  background: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -mox-box-sizing: border-box;
+  color: #566782;
+}
+
+input:focus {
+  background: #ffffff;
+  border: 3px solid #566782;
+}
+
+.fa-trash {
+  background: #ce2029;
+  color: #ffffff;
+  margin-right: 20px;
+  width: 0;
+  height: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+li:hover i {
+  width: 40px;
 }
 
 .done {
   color: #9a9a9a;
   text-decoration: line-through;
-}
-
-ul {
-  list-style: none;
 }
