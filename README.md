@@ -1,2 +1,2 @@
 # groceryList
-Interactive grocery list that allows one to add, delete, edit and cross out items
+Interactive grocery list that allows one to add, delete and cross out items
